@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header,
+section h2,
+section h3,
+button{
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header,
+footer {
+    padding: 16px;
+    background-color:rgb(4, 4, 122) ;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#line {
+    padding: 2px;
+    margin-bottom: 10px;
+    background-color: rgb(4, 4, 122);
+}
+
+header ul,
+.lista-produtos {
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 8px;
+}
+
+header ul a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 24px 0;
+    color: rgb(4, 4, 122);
+}
+
+.store {
+    margin-right: 5%;
+    max-width: 50%;
+}
+
+.marcas img {
+    max-height: 40px;
+    margin-top: 200px;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+}
+
+.lista-produtos img {
+    max-width: 100%;
+}
+
+ul > #line {
+    display: none;
+}
+
+button {
+    background-color: rgb(4, 4, 122);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 8px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: rgb(35, 35, 165);
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .marcas img {
+        max-height: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    #about > .flex {
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .store {
+        max-width: 100%;
+    }
+
+    .marcas img {
+        max-height: 40px;
+        margin-top: 40px;
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+
+    .lista-produtos li {
+        margin-left: 1%;
+    }
+
+    .lista-produtos img {
+        max-width: 100%;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    header > .flex {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    * {
+        text-align: center;
+    }
+
+    .flex {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .marcas img {
+        max-height: 20px;
+        margin-top: 20px;
+    }
+
+    .lista-produtos img {
+        max-height: 300px;
+    }
+
+    header,
+    footer {
+    background-color:rgb(4, 4, 122) ;
+    color: white;
+    }
+
+    header li {
+        display: block;
+        padding: 2px;
+    }
+
+    ul > #line {
+        display: block;
+    }
+
+    button {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
