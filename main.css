@@ -110,7 +110,12 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 1023px) {
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+
     #about > .flex {
         display: block;
         align-items: center;
@@ -119,39 +124,11 @@ button:hover {
 
     .store {
         max-width: 100%;
-    }
-
-    .marcas img {
-        max-height: 40px;
-        margin-top: 40px;
-    }
-
-    .lista-produtos {
-        display: grid;
-        grid-template-columns: repeat(2, 49%);
-    }
-
-    .lista-produtos li {
-        margin-left: 1%;
-    }
-
-    .lista-produtos img {
-        max-width: 100%;
-    }
-
-    button {
-        margin-top: 20px;
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 580px) {
-    header > .flex {
-        display: block;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 640px) {
     * {
         text-align: center;
     }
@@ -169,17 +146,6 @@ button:hover {
 
     .lista-produtos img {
         max-height: 300px;
-    }
-
-    header,
-    footer {
-    background-color:rgb(4, 4, 122) ;
-    color: white;
-    }
-
-    header li {
-        display: block;
-        padding: 2px;
     }
 
     ul > #line {
